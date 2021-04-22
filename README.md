@@ -2,10 +2,20 @@
 
 Casino with game of crash. In development used websockets (socket.io), node.js (adonis.js) and nuxt.js.
 
-# Link storage (Linux):
+## Frontend:
+
+* Vue.js
+* Tailwind
+* БЭМ (small)
+* Socket.io
+* Vue-tailwind (UI)
+* i18n internalization (RU & EN)
+* @nuxtjs/auth with social
+
+### Link storage (Linux):
 sudo ln -s /absolute_path_to/casino/server/public/* /absolute_path_to/casino/static
 
-## Client Setup
+#### Client Setup
 
 ```bash
 # install dependencies
@@ -24,7 +34,7 @@ $ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-## Server Setup
+#### Server Setup
 
 ```bash
 # goto server older
@@ -46,9 +56,9 @@ $ adonis seed
 $ adonis serve
 ```
 
-## Env (client) Setup
-BASE_URL - url to server
-CLIENT_URL - url to client
+#### Env (client) Setup
+* BASE_URL - url to server
+* CLIENT_URL - url to client
 
-## Env (server) Setup
-CLIENT_URL - url to client
+#### Env (server) Setup
+* CLIENT_URL - url to client
