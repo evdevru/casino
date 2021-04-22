@@ -1,9 +1,9 @@
 # casino
 
-Link storage:
-sudo ln -s /home/evgeniy/projects/casino/server/public/\* /home/evgeniy/projects/casino/static
+Link storage (Linux):
+sudo ln -s /absolute_path_to/casino/server/public/* /absolute_path_to/casino/static
 
-## Build Setup
+## Client Setup
 
 ```bash
 # install dependencies
@@ -21,3 +21,34 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Server Setup
+
+```bash
+# goto server older
+$ cd server
+
+# install dependencies
+$ npm install
+
+# generate app key
+$ adonis key:generate
+
+# migrate database
+$ adonis migration:run
+
+# generate bots
+$ adonis seed
+
+# serve at localhost:3333
+$ adonis serve
+```
+
+## Env (client) Setup
+BASE_URL - url to server
+CLIENT_URL - url to client
+
+## Env (server) Setup
+DB_ - database info
+CLIENT_URL - url to client
+SMTP_ & MAIL_ - mail settings
