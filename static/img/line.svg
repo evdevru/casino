@@ -1,0 +1,13 @@
+<svg
+          class="crash__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 325 155"
+        >
+          <path
+            stroke="#ffb200"
+            stroke-width="3px"
+            fill="none"
+            stroke-linecap="round"
+            d="M 0,153 C 216.66666666666666, 124.155 162.5, 83.02833333333334 325, 53.50999999999999"
+          ></path>
+        </svg>

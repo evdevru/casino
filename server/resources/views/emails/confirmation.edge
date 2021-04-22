@@ -1,0 +1,9 @@
+<h1>Привет, {{ user.username }}</h1>
+<p>Смена почты с <b>{{ user.email }}</b> на <b>{{ confirmation.email }}</b></p>
+<p>Перейдите о ссылке для подтверждения: 
+    <a href="{{ baseUrl }}/user/confirmation/{{ confirmation.token }}">{{ baseUrl }}/user/confirmation/{{ confirmation.token }}</a>
+</p>
+<br />
+<p>Если вы не подавали заявку, то проигнорируйте письмо и смените пароль вашего аккаунта.</p>
+<br />
+<p>С уважением, команда ezcash.</p>

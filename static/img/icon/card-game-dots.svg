@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="8" viewBox="0 0 38 8">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#FFB200">
+            <g>
+                <g>
+                    <g transform="translate(-501 -790) translate(345 670) translate(0 59) translate(156 61)">
+                        <rect width="10" height="8" x="28" opacity=".1" rx="4"/>
+                        <rect width="20" height="8" rx="4"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
