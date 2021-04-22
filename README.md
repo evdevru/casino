@@ -1,6 +1,8 @@
-# casino
+# Gambling template casino
 
-Link storage (Linux):
+Casino with game of crash. In development used websockets (socket.io), node.js (adonis.js) and nuxt.js.
+
+# Link storage (Linux):
 sudo ln -s /absolute_path_to/casino/server/public/* /absolute_path_to/casino/static
 
 ## Client Setup
@@ -49,6 +51,4 @@ BASE_URL - url to server
 CLIENT_URL - url to client
 
 ## Env (server) Setup
-DB_ - database info
 CLIENT_URL - url to client
-SMTP_ & MAIL_ - mail settings
