@@ -7,7 +7,7 @@ Event.on('user::register', async (user) => {
   await Mail.send('emails.registration', user.toJSON(), (message) => {
     message
       .to(user.email)
-      .from('info@wotaks.ru')
+      .from(process.env.MAIL_FROM)
       .subject('Регистрация на сайте')
   })
 })
@@ -19,7 +19,7 @@ Event.on('user::confirmation', async (user, confirmation) => {
     (message) => {
       message
         .to(confirmation.email)
-        .from('info@wotaks.ru')
+        .from(process.env.MAIL_FROM)
         .subject('Подтверждение почты')
     }
   )

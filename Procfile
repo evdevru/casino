@@ -1,1 +1,0 @@
-web: npm run start && npm run start --prefix ./server
