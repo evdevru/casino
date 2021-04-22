@@ -25,15 +25,30 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ## Server Setup
 
 ```bash
+# goto server older
+$ cd server
+
 # install dependencies
 $ npm install
+
+# generate app key
+$ adonis key:generate
 
 # migrate database
 $ adonis migration:run
 
-# serve at localhost:3333
-$ adonis serve
-
 # generate bots
 $ adonis seed
+
+# serve at localhost:3333
+$ adonis serve
 ```
+
+## Env (client) Setup
+BASE_URL - url to server
+CLIENT_URL - url to client
+
+## Env (server) Setup
+DB_ - database info
+CLIENT_URL - url to client
+SMTP_ & MAIL_ - mail settings
