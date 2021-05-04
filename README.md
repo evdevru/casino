@@ -1,7 +1,7 @@
 # Gambling template casino
 
 Casino with game of crash. In development used websockets (socket.io), node.js (adonis.js) and nuxt.js.  
-Demo: https://www.youtube.com/watch?v=ZP6pCAx_dkY
+Demo: https://www.youtube.com/watch?v=ZP6pCAx_dkY  
 **_Сотрудничество (разработка):_** [Telegram](https://t.me/sonicbhf)
 
 ## Frontend:
