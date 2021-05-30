@@ -63,6 +63,6 @@ const aliases = {}
 | Here you store ace commands for your package
 |
 */
-const commands = ['App/Commands/RunCrash']
+const commands = []
 
 module.exports = { providers, aceProviders, aliases, commands }
