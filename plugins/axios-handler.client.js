@@ -1,16 +1,16 @@
 export default function ({ $axios, $notify }) {
   $axios.onResponse((response) => {
     if (response && response.data) {
-    const { status, message } = response.data
-    if (status && message)
-      $notify(
-        {
-          text: message,
-          type: status,
-          group: 'default',
-        },
-        4000
-      )
+      const { status, message } = response.data
+      if (status && message)
+        $notify(
+          {
+            text: message,
+            type: status,
+            group: 'default',
+          },
+          4000
+        )
     }
   })
   $axios.onError((error) => {
@@ -27,7 +27,11 @@ export default function ({ $axios, $notify }) {
       )
     }
 
-    if (!error.response?.data?.message && Array.isArray(error.response.data)) {
+    if (
+      error.response &&
+      !error.response?.data?.message &&
+      Array.isArray(error.response.data)
+    ) {
       error.response.data.forEach((err) => {
         $notify(
           {
@@ -58,5 +62,7 @@ export default function ({ $axios, $notify }) {
         4000
       )
     }
+
+    return true
   })
 }
