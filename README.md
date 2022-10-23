@@ -2,7 +2,10 @@
 
 Casino with game of crash. In development used websockets (socket.io), node.js (adonis.js) and nuxt.js.  
 Demo: https://www.youtube.com/watch?v=ZP6pCAx_dkY  
-**_Сотрудничество (разработка):_** [Telegram](https://t.me/sonicbhf)
+## Installation:
+* Frontend (nuxt@^2) - https://nuxtjs.org/docs/get-started/installation/
+* Backend (adonis@^4) - https://legacy.adonisjs.com/docs/4.1/installation
+* Database - https://legacy.adonisjs.com/docs/4.1/database
 
 ## Frontend:
 
