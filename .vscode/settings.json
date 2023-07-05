@@ -3,6 +3,7 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "nuxt.isNuxtApp": true
   // "eslint.validate": ["javascript"]
 }

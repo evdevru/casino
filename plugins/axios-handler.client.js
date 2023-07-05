@@ -1,20 +1,22 @@
 export default function ({ $axios, $notify }) {
   $axios.onResponse((response) => {
-    const { status, message } = response.data
-    if (status && message)
-      $notify(
-        {
-          text: message,
-          type: status,
-          group: 'default',
-        },
-        4000
-      )
+    if (response && response.data) {
+      const { status, message } = response.data
+      if (status && message)
+        $notify(
+          {
+            text: message,
+            type: status,
+            group: 'default',
+          },
+          4000
+        )
+    }
   })
   $axios.onError((error) => {
     let message = null
     // validation errors in error.response.data
-    if (error.response.data.message) {
+    if (error.response?.data?.message) {
       $notify(
         {
           text: error.response.data.message,
@@ -25,7 +27,11 @@ export default function ({ $axios, $notify }) {
       )
     }
 
-    if (!error.response.data.message && Array.isArray(error.response.data)) {
+    if (
+      error.response &&
+      !error.response?.data?.message &&
+      Array.isArray(error.response.data)
+    ) {
       error.response.data.forEach((err) => {
         $notify(
           {
@@ -38,7 +44,7 @@ export default function ({ $axios, $notify }) {
       })
     }
 
-    const code = error.response.status
+    const code = error.response?.status
 
     switch (code) {
       case 401:
@@ -56,5 +62,7 @@ export default function ({ $axios, $notify }) {
         4000
       )
     }
+
+    return true
   })
 }

@@ -12,7 +12,7 @@ const rnd = require('random-number')
 
 const io = require('socket.io')(Server.getInstance(), {
   cors: {
-    origin: process.env.CLIENT_URL,
+    origin: '*',
     methods: ['GET', 'POST'],
     credentials: true,
   },
